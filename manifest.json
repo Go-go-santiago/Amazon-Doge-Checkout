@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "USD to Doge",
+    "description": "Convert Amazon Prices to Doge Coin Prices",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.amazon.com/*"
+            ],
+            "css": [
+                "./styles.css"
+            ],
+            "js": [
+                "./main.js"
+            ]
+        }
+    ]
+}
